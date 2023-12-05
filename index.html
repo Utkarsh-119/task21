@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Task1.2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<script>
+   function myFunction(){
+  
+   let x = prompt("Give some text", "Some random text");
+   let y=x.length;
+   let z=1;
+   for(let i in x)
+   {
+     if(x[i]==" ") 
+     {
+        z++;
+     }
+   }
+   document.getElementById("heading").innerHTML=x+"  "+ y + " "  + z;}
+
+  
+ </script>
+
+<style>
+.image1:hover{
+ filter:grayscale(0%)!important;
+}	
+
+
+.rowmod
+{
+  --bs-gutter-x:0;
+}
+
+.container1 
+{
+  position: relative;
+}
+
+.image 
+{
+  transition: .5s ease;
+}
+
+.middle 
+{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 94%;
+  left: 50%;
+  width:95%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image:hover
+{
+  opacity: 0.8;
+}
+
+.container1:hover .middle 
+{
+  opacity: 1;
+}
+
+.text 
+{
+  color: white;
+  font-size: 20px;
+  padding: 16px 32px;
+}
+
+.form-control
+{
+  margin-top:5px;
+  height:40px;
+}
+
+.form-control:focus
+{
+  box-shadow: none;
+  border-color: #eee;
+}
+
+.dropdown:hover>.dropdown-menu
+ {
+  display: inline;
+ }
+
+.dropdown-menu
+{
+display:none;
+--bs-dropdown-link-active-bg:#f8f9fa;
+--bs-dropdown-link-active-color:black;
+--bs-dropdown-link-hover-bg:white;
+}
+
+.dropdown-item:hover
+{
+ text-decoration:underline;
+}
+
+.under
+{
+ text-decoration:none;
+}
+
+.under:hover
+{
+ text-decoration:underline;
+}
+
+.container-fluid
+{
+ --bs-gutter-x:0px;
+}
+
+.nav-link:hover
+{
+ background-color:#111;
+ color:white;
+ background-clip:border-box;
+text-decoration:none;
+}
+
+.navbar-nav
+{
+--bs-nav-link-padding-x: 0;
+--bs-nav-link-padding-y: 1rem;
+}
+
+.dropdown>.dropdown-toggle:active 
+{
+  pointer-events: none;
+}
+
+.ab12 
+{
+  position: relative;
+  text-align: center;
+  color: red;
+}
+
+.centered 
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+@media only screen and (min-width: 992px) 
+{
+  
+ .middle
+ {
+   top:91%;
+ }
+ .photo
+ {
+   width:250px;
+ }
+
+  
+}
+
+
+</style>
+
+
+</head>
+ 
+<body onloa="myFunction()">
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+<div class="container-fluid">
+
+   <a class="navbar-brand " href="#" style="margin-left:15px;margin-right:30px;"><img src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Logo" style="width:50px;"       class="rounded-pill shadow"></a>
+   <div class="d-lg-none col-6">
+    <form class="d-flex " >
+      <input class="form-control shadow " type="text" placeholder="Search" style="border-radius:0px;">
+      <span> <button class="btn btn-basic shadow" type="submit"style="background-color:white;margin-top:5px;margin-right:10px;border-width:1px;border-color:#dee2e6;border-style:solid;border-radius:0px;"><i class="fa fa-search" style="font-size:24px;"></i></button></span>
+    </form>
+   </div>
+ 
+   <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+      <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse row rowmod" id="navbarNavDropdown">
+     <ul class="navbar-nav ">
+      <div class="col-2"></div>
+             
+        <li class="nav-item dropdown col-lg-1 col-sm-7" style="margin-left:20px;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"  data-bs-toggle="dropdown" aria-expanded="false" style="font-size:15px">
+            <b>Men</b>
+
+          </a>
+          <ul class="dropdown-menu " aria-labelledby="navbarDarkDropdownMenuLink">
+          <div class="row">
+           <div class="col-7">
+            <li ><a class="dropdown-item " href="#">Formals </a></li>
+            <li><a class="dropdown-item" href="#">Sneakers</a></li></div>
+            <div class="col-5 d-none d-lg-block" style="border-left: 1px solid">
+              <li ><a class="dropdown-item " href="#"><img class="rounded shadow" style="float:right" width=60 src="https://www.w3schools.com/w3css/img_lights.jpg"></a></li>
+            <li><a class="dropdown-item" href="#"><img class="rounded shadow" width=60 style="margin-top:10px;float:right;"src="https://www.w3schools.com/w3css/img_lights.jpg"></a></li>
+            </div>
+            </div>
+<li><hr class="dropdown-divider photo "></li>
+           
+            <li>
+             <div class = " dropdown dropend ">
+             
+             <a class="dropdown-toggle under " href="#"  data-bs-toggle="dropdown" style="margin-left:15px;">Dropdown</a>
+               <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">Link</a></li>
+               <li><a class="dropdown-item" href="#">Second link</a></li>
+               <li><a class="dropdown-item" href="#">Third link</a></li>
+               </ul>
+               </div>
+             </li>	
+          </ul>
+          
+        </li>
+        
+        <li class="nav-item dropdown col-lg-1 col-sm-7" style="margin-left:20px;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:15px">
+            <b>Women</b>
+          </a>
+       
+          <ul class="dropdown-menu " aria-labelledby="navbarDarkDropdownMenuLink">
+         <div class="row">
+        <div class="col-7">
+            <li><a class="dropdown-item" href="#">Casual</a></li>
+            <li><a class="dropdown-item" href="#">Party Wear</a></li>
+           
+          </div>
+          <div class="col d-none d-lg-block " style="border-left:1px solid">
+           <li ><a class="dropdown-item " href="#"><img class="rounded-circle shadow" style="float:right" width=60 src="https://www.w3schools.com/w3css/img_forest.jpg"></a></li>
+            <li><a class="dropdown-item" href="#"><img class="rounded-circle shadow" width=60 style="margin-top:10px;float:right;"src="https://www.w3schools.com/w3css/img_forest.jpg"></a></li>
+          </div>
+          </div>
+            <li><hr class="dropdown-divider photo"></hr></li>
+            <li>
+             <div class=" dropdown dropend"  >
+             <a class="dropdown-toggle under " href="#" role="button" data-bs-toggle="dropdown" style="margin-left:15px;text-decoration:none;">Dropdown</a>
+               <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">Link</a></li>
+               <li><a class="dropdown-item" href="#">Second link</a></li>
+               <li><a class="dropdown-item" href="#">Third link</a></li>
+                </ul>
+               </div>
+             </li>
+          </ul>
+        </li>
+        
+        <li class="nav-item dropdown col-lg-1 col-sm-7 " style="margin-left:20px;margin-right:30px;">
+          <a class="nav-link dropdown-toggle under" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:15px;">
+           <b>Children</b>
+          </a>
+          <ul class="dropdown-menu " aria-labelledby="navbarDarkDropdownMenuLink">
+               <div class="row">
+              <div class="col-7" >
+            <li><a class="dropdown-item" href="#">Another </a></li>
+            <li><a class="dropdown-item" href="#">Another thing</a></li>
+            
+
+            
+              </div>
+              <div class="col d-none d-lg-block" style="border-left:1px solid">
+                <li ><a class="dropdown-item " href="#"><img class="rounded-circle shadow" style="float:right" width=60 src="https://www.w3schools.com/w3css/img_snowtops.jpg"></a></li>
+            <li><a class="dropdown-item" href="#"><img class="rounded-circle shadow" width=60 style="margin-top:10px;float:right;"src="https://www.w3schools.com/w3css/img_snowtops.jpg"></a></li>
+                </div>
+             </div>
+              <li><hr class="dropdown-divider photo" ></li>
+              <li>
+             <div class=" dropdown dropend "  >
+             <a class=" dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" style="margin-left:15px;text-decoration:none;">Dropdown </a>
+               <ul class="dropdown-menu ">
+               <li><a class="dropdown-item" href="#">Link</a></li>
+               <li><a class="dropdown-item" href="#">Second link</a></li>
+               <li><a class="dropdown-item" href="#">Third link</a></li>
+                </ul>
+               </div>
+              </li>
+            </ul>
+           </li>
+        <div class ="col-2"></div>
+         <div class="d-none d-lg-block col">
+         <form class="d-flex ">
+           
+        <input class="form-control shadow" required type="text" placeholder="Search" style="border-radius:0px;margin-left:30px">
+       <span> <button class="btn btn-basic shadow" type="submit"style="background-color:white;margin-top:5px;margin-right:50px;border-width:1px;border-color:#dee2e6;border-style:solid;border-radius:0px;"><i class="fa fa-search" style="font-size:24px;"></i></button></span>
+      </form></div>
+      </ul>
+    </div>
+</div>  
+</nav>
+
+
+<div class="container-fluid">
+ <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel" style="margin-bottom:20px;">
+
+  
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="bitton" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    
+  </div>
+
+
+  <div class="carousel-inner">
+    <div class="carousel-item active ab12">
+      <a href="https://www.nivisolutions.com/" target="_blank"><img src="https://media.istockphoto.com/id/484733518/photo/soccer-players-in-action.jpg?s=2048x2048&w=is&k=20&c=SHeF0tAo3T3z2XRra5VTf5zyMFfuBMWNIFBzH__3Vc4=" class="d-block w-100"height="700px" ></a>
+       
+ 
+    </div>
+     <div class="carousel-item">
+     <a href="https://www.nivisolutions.com/" target="_blank"><img src="https://media.istockphoto.com/id/733522037/photo/low-section-of-girl-sitting-on-slide-at-park.jpg?s=2048x2048&w=is&k=20&c=68M6FDFADr-y6NV_qg1OrpMa3Mn8ISy8efpIF3Q-dwE=" alt="Chicago" class="d-block w-100 " height="700px"></a>
+    </div>
+    
+    
+    <div class="carousel-item">
+     <a href="https://www.nivisolutions.com/"  target="_blank"> <img src="https://www.w3schools.com/bootstrap5/ny.jpg" alt="New York"  class="d-block w-100 "></a>
+    </div>
+  </div>
+ 
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev" >
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next" >
+    <span class="carousel-control-next-icon"></span>
+  </button>
+  
+  
+ 
+ </div>
+</div>
+
+
+<div class="container pt-5">
+<h1 class="text-center text-uppercase">Feature Images</h1>
+<hr style="border: 1px solid black ;width:20%;margin:auto;">
+<br>
+
+<div class="row">
+    
+    <div class="col-sm-12 col-lg-4 container1 d-grid">
+
+     <img src="https://images.dsw.com/is/image/568303_100_ss_01?impolicy=qlt-medium&imwidth=1011&imdensity=2" class="image shadow" alt="Cinque Terre" style="width:100%;margin-top:20px;">
+     <br><br>
+      <button type="button" class="btn btn-outline-dark " style="border-radius:20px;">See more</button>
+   </div>
+<div class="col-sm-12 col-lg-4 container1 d-grid"><img src="https://images.dsw.com/is/image/561483_108_ss_01?impolicy=qlt-medium&imwidth=1011&imdensity=2	" class="image shadow" alt="Cinque Terre" style="width:100%;margin-top:20px;">
+<br><br>
+<button type="button" class="btn btn-outline-dark d-grid" style="border-radius:20px;">See more</button>
+</div>
+<div class="col-sm-12 col-lg-4 container1 d-grid"><img src="https://images.dsw.com/is/image/561503_133_ss_01?impolicy=qlt-medium&imwidth=1011&imdensity=2" class="image shadow" alt="Cinque Terre" style="width:100%;margin-top:20px;">
+  <br><br>
+<button type="button" class="btn btn-outline-dark d-grid" style="border-radius:20px;">See more</button></div>	
+
+</div>
+</div>
+
+
+<div class="container pt-5  my-5" >
+ <div class="row">
+  <div class="col-12 col-lg-6 " >
+<img src="https://apiprod.drewshoe.com/Data/Media/d19e463d-1f97-4131-8a2a-1d7ef44155e8Revised%20Box%20Lid-min.jpg?v=0"  style="height:100%;width:100%;;" alt="Cinque Terre">
+</div>
+<div class="col-12 col-lg-6 " style="padding:40px;">
+<h1>THE ORTHOPEDIC SHOE</h1>
+<p>Welcome to Drew Shoe, the number one provider of orthopedic shoes, diabetic shoes, and other medical shoes, ensuring that you will always be able to find the footwear you need to improve your comfort
+<hr>
+Experience The DREW Difference With Drew Orthopedic Shoes
+<hr>
+A. PADDED TONGUE minimizes lacing pressure over the instep and protects against abrasions and discomfort.
+<hr>
+B. FOAM CUSHIONED COLLAR prevents heel slippage for a snug and friction-free fit.
+<hr>
+C. BROAD TOE BOX provides room for breathability and comfortable toes.
+<hr>
+D. EXTENDED MEDIAL THERMOPLASTIC COUNTER enhances rear-foot walking stability while minimizing slippage.
+<hr>
+E. REMOVABLE, DUAL-DENSITY INSOLES permanently forms to the foot with a molded bottom for additional cushioning and Drillex® cover to wick away moisture.
+<hr>
+F. STRONG SHANK adds support and stability for excellent arch support and superior protection.
+<hr>
+G. LIGHTWEIGHT OUTSOLE provides ball-of-foot stability with a mild rocker-forefoot to help move you forward.</p>
+</div>
+</div>
+</div>
+
+<div class="container pt-5 my-5">
+<h1 class="text-center text-uppercase"style=" text-decoration-thickness: 20px;">Companies</h1>
+<br>
+<div class="row">
+<div class="col-sm-6 col-lg-3" >
+<img width="80%" style="display:block;margin:auto;" src="https://thumbs.dreamstime.com/b/nike-logo-white-background-editorial-illustration-company-168841205.jpg	">
+</div>
+<div class="col-sm-6 col-lg-3">
+<img width="80%" style="display:block;margin:auto;padding-bottom:40px;" src="https://logowik.com/content/uploads/images/adidas4871.logowik.com.webp">
+</div>
+<div class="col-sm-6 col-lg-3">
+<img width="70%" style="display:block;margin:auto;" src="https://qph.cf2.quoracdn.net/main-qimg-46e4cf54e93ad179ff19843dde22f4d6-lq">
+</div>
+<div class="col-sm-6 col-lg-3" >
+<img width="90%" class="image1" style="display:block;margin:auto;filter: grayscale(100%);" src="https://1000logos.net/wp-content/uploads/2021/05/Fila-logo.png">
+</div>
+
+</div>
+
+</div>
+
+
+<div class="container-fluid">
+<footer class="text-center text-lg-start bg-dark text-white">
+  
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    
+   
+   
+  </section>
+  
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      
+      <div class="row mt-3">
+        
+        <div class="col-md-3 col-lg-4 col-xl-3 col-6 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">
+            Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        
+
+        
+        <div class="col-md-2 col-lg-2 col-xl-2 col-6 mx-auto mb-4">
+         
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+         
+          <p>
+            <a href="#!" class="text-reset under" >Item 1</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset under"  >Item 2</a>
+          </p>
+           
+          <p>
+            <a href="#!" class="text-reset under" >Item 3</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset under"  >Item 4</a>
+          </p>
+        </div>
+        
+        <div class="col-md-3 col-lg-2 col-xl-2 col-6 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+         
+          <p style="padding-right:10px">
+            <a href="#!" class="text-reset under">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset under">Settings</a>
+          </p>
+          
+          <p>
+            <a href="#!" class="text-reset under">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset under"	>Help</a>
+          </p>
+         
+        </div>
+         <div class="col-md-4 col-lg-3 col-xl-3 col-6 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p> New York, NY 10012, US</p>
+          <p>
+           
+            info@example.com
+          </p>
+          <p> + 01 234 567 88</p>
+          <p> + 01 234 567 89</p>
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+  
+  
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 Copyright :
+    <a class="text-reset fw-bold under" href="#">Company name</a>
+  </div>
+  
+</footer>
+</div>
+
+</body>
+</html>
+
+
